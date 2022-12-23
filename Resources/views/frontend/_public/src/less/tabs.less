@@ -1,0 +1,115 @@
+.custom-tabs-outer-container {
+    margin-bottom: 60px;
+}
+
+.custom-tabs-outer-container ul {
+    padding-left: 15px;
+}
+
+.custom-tabs{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+  margin-bottom: 15px;
+
+  &--btn{
+    margin: 5px;
+    padding: 0.125rem 0.75rem 0.125rem 0.75rem;
+    height: 40px;
+    background-color: @tabButtonBackgroundColor;
+    color: @tabButtonTextColor;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+
+    &:hover,
+    &.active{
+      background-color: @tabActiveBackgroundColor;
+      color: @tabActiveTextColor;
+    }
+  }
+
+  &--container{
+
+  }
+
+  &--body{
+    &:not(.active){
+      display: none;
+    }
+  }
+}
+
+
+.custom-tabs-right .custom-tabs {
+		display: none!important;
+}
+
+.custom-tabs-right .custom-tabs--body {
+		display: none!important;
+}
+
+.mv-mobile-tab-activated .custom-tabs--body.active {
+		display: block!important;
+}
+
+@media all and (min-width: 768px) {
+		.custom-tabs-outer-container {
+				display: flex;
+		}
+		
+		.custom-tabs-left {
+				border-right: 1px solid #CCC;
+				width: 60%;
+				padding-right: 25px;
+		}
+		
+		.custom-tabs-right {
+				display: block!important;
+				width: 40%;
+				padding-left: 25px;
+		}
+		
+		.custom-tabs-right .custom-tabs {
+				display: flex!important;
+		}
+		
+		.custom-tabs-right .custom-tabs--body {
+				display: block!important;
+		}
+		
+		.custom-tabs-right .custom-tabs--body:not(.active) {
+				display: none!important;
+		}
+		
+		/* Verstecke die Tabs auf der linken Seite in der Desktop-Ansicht,
+		die nur in der mobilen Ansicht sichtbar sind. In der Desktop-Ansicht sind
+		diese auf der rechten Seite */
+		[data-activate-tab-mobile] {
+				display: none!important;
+		}
+}
+
+/* Innere Gestaltung der rechten Tabs */
+.custom-tabs-right h2 { font-size: 20px; color: #163B64; text-align: left; margin-top: 11px; font-weight: bold; display: none; }
+.custom-tabs-right img.responsive { width: 100%; height: auto; }
+.mv-product-detail-with-right-boxes-item { width: 49%; display: inline-block; }
+.mv-clearfix { clear: both; }
+.mv-product-detail-with-right-boxes-item-title { padding: 5px 10px; text-align: center; }
+.mv-product-detail-with-right-boxes-item-price { padding: 5px 10px; text-align: center; color: #a40800; }
+
+.mv-product-detail-with-right-boxes-item { text-align: center; }
+.mv-product-detail-with-right-boxes-item img { max-height: 194px; margin: 0 auto; }
+
+/* "Gratis" im Artikeldetail zweispaltig machen */
+.custom-tabs-right .mv-product-detail-with-right-boxes-items-container {
+		/*width: 49%;*/
+		display: inline-block;
+}
+
+a .mv-product-detail-with-right-boxes-item-title {
+		color: #ababab;
+}

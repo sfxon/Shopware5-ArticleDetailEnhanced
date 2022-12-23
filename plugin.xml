@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+
+		<label lang="de">Artikel-Detail Professional</label>
+    <label lang="en">Article Detail Professional</label>
+    <version>1.0</version>
+    <link>http://mindfav.com/shopware5/plugins/mv-article-detail-professional</link>
+    <author>Mindfav, Steve Krämer</author>
+
+		<changelog version="1.0">
+        <changes lang="de">First Release - 09.08.2021</changes>
+        <changes lang="en">First Release - 2021-08-09</changes>
+    </changelog>
+
+		<changelog version="0.9">
+        <changes lang="de">Beta Test</changes>
+        <changes lang="en">Beta Test</changes>
+    </changelog>
+
+    <changelog version="0.8">
+        <changes lang="de">Alpha Test - 09.08.2021</changes>
+        <changes lang="en">Alpha Test - 2021-08-09</changes>
+    </changelog>
+
+    <description lang="de">
+		<![CDATA[
+		<h1>Animated Boxes</h1>
+		
+		<h2>1. Über das Plugin</h2>
+		<p>Dieses Plugin erweitert die Artikel-Detail Seite um neue Optionen und Tabs.</p>
+		]]>
+    </description>
+    <description lang="en">
+    This plugin enhances the article-details age with new options and tabs.
+		</description>
+    <compatibility minVersion="5.5.0" />
+</plugin>

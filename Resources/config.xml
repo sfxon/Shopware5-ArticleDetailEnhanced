@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+        <element type="color" scope="locale">
+            <name>tabBackgroundColor</name>
+            <label lang="de">Tab-Button Hintergrundfarbe</label>
+            <label lang="en">Tab button background color</label>
+            <value>#efefef</value>
+            <description lang="de">Hintergrundfarbe des Tab-Buttons.</description>
+            <description lang="en">Background color of the tab button.</description>
+        </element>
+        
+        <element type="color" scope="locale">
+            <name>tabTextColor</name>
+            <label lang="de">Tab-Button Textfarbe</label>
+            <label lang="en">Tab button text color</label>
+            <value>#163B64</value>
+            <description lang="de">Textfarbe des Tab-Buttons.</description>
+            <description lang="en">Text color of the tab button.</description>
+        </element>
+        
+        <element type="color" scope="locale">
+            <name>tabActiveBackgroundColor</name>
+            <label lang="de">Aktiver Tab: Button Hintergrundfarbe</label>
+            <label lang="en">Activated tab: button background color</label>
+            <value>#fabb00</value>
+            <description lang="de">Textfarbe des Tab-Buttons der aktiv ist.</description>
+            <description lang="en">Text color of the tab button that is activated.</description>
+        </element>
+        
+        <element type="color" scope="locale">
+            <name>tabActiveTextColor</name>
+            <label lang="de">Aktiver Tab: Button Textfarbe</label>
+            <label lang="en">Activated tab: button text color</label>
+            <value>#ffffff</value>
+            <description lang="de">Textfarbe des Tab-Buttons der aktiv ist.</description>
+            <description lang="en">Text color of the tab button that is activated.</description>
+        </element>
+    </elements>
+</config>

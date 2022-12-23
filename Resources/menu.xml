@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.7/engine/Shopware/Components/Plugin/schema/menu.xsd"
+>
+    <entries>
+        <entry>
+            <name>MvArticleDetail</name>
+            <label lang="en">Article Tabs</label>
+            <label lang="de">Artikel-Tabs</label>
+            <controller>MvArticleDetail</controller>
+            <action>index</action>
+            <class>sprite-application-icon-large settings--theme-manager</class>
+            <parent identifiedBy="controller">ConfigurationMenu</parent>
+						<onclick>Shopware.ModuleManager.createSimplifiedModule("MvArticleDetail", { "title": "Artikel-Tabs" })</onclick>
+        </entry>
+    </entries>
+</menu>
